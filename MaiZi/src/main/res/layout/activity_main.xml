@@ -3,13 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_light"
     tools:context="com.lindroid.customviewlearning.MainActivity">
 
     <com.lindroid.customviewlearning.view.SubmitButton
-        android:text="提交"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="提交" />
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_itemView1"-->
+    <!--android:text="继承布局的方式1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <com.lindroid.customviewlearning.view.ItemView
+        android:id="@+id/itemView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" />
+
+    <com.lindroid.customviewlearning.view.ItemView
+        android:id="@+id/itemView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.lindroid.customviewlearning.view.ItemView
+        android:id="@+id/itemView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
 </LinearLayout>
